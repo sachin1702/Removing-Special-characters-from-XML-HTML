@@ -27,3 +27,20 @@ for filename in glob.glob(os.path.join(folder_path, '*.xml')):
     text = f.read()
     print (filename)'''
 
+
+
+
+***************************************************************************************************************************
+
+import os,glob
+import re
+
+folder_path = r'C:\Users\ENQRRUH\Desktop\Project Python\NEW'
+
+for filename in glob.glob(os.path.join(folder_path, '*.xml')):
+    with open(filename, 'r') as f:
+    # Open the file and read to generate Information in string format
+        inFile = open(filename, 'r',encoding='utf-8').read()
+        if(re.search('�+', inFile)):
+            #stdin, stdout = ssh.exec_command("cp $filename /bscs/DOCS/Store/")
+            print(filename)
