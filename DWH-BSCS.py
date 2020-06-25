@@ -35,7 +35,7 @@ for filename in glob.glob(os.path.join(folder_path, '*.xml')):
 import os,glob
 import re
 
-folder_path = r'C:\Users\ENQRRUH\Desktop\Project Python\NEW'
+folder_path = r'C:\Users\Desktop\Project Python\NEW'
 
 for filename in glob.glob(os.path.join(folder_path, '*.xml')):
     with open(filename, 'r') as f:
